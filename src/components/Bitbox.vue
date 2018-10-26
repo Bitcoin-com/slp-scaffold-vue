@@ -10,18 +10,25 @@
 </template>
 
 <script>
-let Wormhole = require('wormholecash/lib/Wormhole').default
-let wormhole = new Wormhole()
+let SLPSDK = require("slp-sdk/lib/SLP").default;
+let SLP = new SLPSDK()(async () => {
+  try {
+    let list = await SLP.list();
+    console.log(list);
+  } catch (error) {
+    console.error(error);
+  }
+})();
 
 export default {
-  name: 'BitBox'
-}
+  name: "BitBox"
+};
 </script>
 
 <style scoped>
-  .App {
-    font-family: sans-serif;
-    max-width: 100%;
-    word-wrap: break-word;
-  }
+.App {
+  font-family: sans-serif;
+  max-width: 100%;
+  word-wrap: break-word;
+}
 </style>
