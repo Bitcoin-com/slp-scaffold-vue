@@ -12,7 +12,7 @@
     "coverage:report": "nyc --reporter=html mocha --require babel-core/register --timeout 5000"
   },
   "dependencies": {
-    "slp-sdk": "0.1.1",
+    "slp-sdk": "0.2.3",
     "vue": "^2.5.2"
   },
   "devDependencies": {
