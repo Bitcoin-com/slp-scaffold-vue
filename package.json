@@ -1,6 +1,6 @@
 {
   "name": "slp-scaffold-vue",
-  "version": "0.4.10",
+  "version": "0.4.12",
   "license": "MIT",
   "description": "Basic vuejs app w/ SLP SDK bindings",
   "author": "Gabriel Cardona @ Bitcoin.com",
@@ -12,7 +12,7 @@
     "coverage:report": "nyc --reporter=html mocha --require babel-core/register --timeout 5000"
   },
   "dependencies": {
-    "slp-sdk": "0.4.10",
+    "slp-sdk": "0.4.12",
     "vue": "^2.5.2"
   },
   "devDependencies": {
