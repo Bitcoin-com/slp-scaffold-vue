@@ -1,10 +1,10 @@
 exports.config = {
-  networks: {
+  environments: {
     development: {
-      restURL: "https://trest.bitcoin.com/v1/"
+      restURL: "https://trest.bitcoin.com/v2/"
     },
     production: {
-      restURL: "https://rest.bitcoin.com/v1/"
+      restURL: "https://rest.bitcoin.com/v2/"
     }
   }
 };
