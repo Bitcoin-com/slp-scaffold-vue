@@ -1,16 +1,15 @@
 <template>
   <div class="App">
     <header class="App-header">
-      <img src="../assets/logo.png">
+      <img src="../assets/logo.png" />
       <h1 class="App-title">Hello Wormhole</h1>
     </header>
-    <div class='App-content'>
-    </div>
+    <div class="App-content"></div>
   </div>
 </template>
 
 <script>
-let SLPSDK = require("slp-sdk/lib/SLP").default;
+let SLPSDK = require("slp-sdk");
 let SLP = new SLPSDK()(async () => {
   try {
     let list = await SLP.list();
